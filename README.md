@@ -3,8 +3,6 @@
 ## Clone the Repo  
 git clone https://github.com/shirishshrestha/product-ordering  
 
-Edit the frontend product_ordering .env file from this url https://product-ordering-3supx2yl4-shirish-shresthas-projects.vercel.app/api to http://localhost:3000/api
-
 ## cd frontend & cd product_ordering  
 npm install
 npm run dev  
