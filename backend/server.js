@@ -74,7 +74,6 @@ app.get("/api/products", (req, res) => {
 
 app.post("/api/placeOrder", (req, res) => {
   const selectedProducts = req.body.selectedProducts;
-  console.log(req.body);
   const packages = divideIntoPackages(selectedProducts);
   res.json(packages);
 });
