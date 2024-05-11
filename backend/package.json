@@ -2,9 +2,9 @@
   "name": "product_ordering",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node index.js"
   },
   "author": "Shirish Shrestha",
   "license": "ISC",
