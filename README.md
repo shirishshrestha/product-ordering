@@ -1,7 +1,7 @@
 ## Guidelines:  
 
 ## Clone the Repo  
-git clone https://github.com/shirishshrestha/product-ordering  
+git clone https://github.com/shirishshrestha/product-ordering/tree/local
 
 ## cd frontend & cd product_ordering  
 npm install
