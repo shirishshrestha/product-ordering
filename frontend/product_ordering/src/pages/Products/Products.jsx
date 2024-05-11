@@ -5,15 +5,22 @@ import "./Products.css";
 
 import { placeOrderReq } from "../../api/PlaceOrderApiSlice";
 
+/**
+ * Component for managing product ordering.
+ * @returns {JSX.Element} The Products component.
+ */
 function Products() {
+    // State for selected products and packages
   const [selectedProducts, setSelectedProducts] = useState([]);
   const [packages, setPackages] = useState([]);
 
+    // Query to fetch products
   const { isPending, data: products } = useQuery({
     queryKey: ["products"],
     queryFn: () => getProducts(),
   });
 
+   // Mutation for placing order
   const placeOrderMutation = useMutation({
     mutationFn: () => placeOrderReq(selectedProducts),
     onSuccess: (data) => {
@@ -24,6 +31,10 @@ function Products() {
     },
   });
 
+   /**
+   * Handle checkbox change event.
+   * @param {Object} product - The product object.
+   */
   const handleCheckboxChange = (product) => {
     const index = selectedProducts.findIndex((p) => p.id === product.id);
     if (index === -1) {
@@ -36,6 +47,7 @@ function Products() {
     }
   };
 
+  // Function to place order on click of button
   const placeOrder = () => {
     placeOrderMutation.mutate();
   };
