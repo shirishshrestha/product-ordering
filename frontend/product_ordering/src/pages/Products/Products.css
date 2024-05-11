@@ -70,6 +70,7 @@
 .package__heading {
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .package__details {
