@@ -11,5 +11,5 @@ to run the vite server in http://localhost:5173 (cors is only allowed to this po
 in another terminal  
 ## cd backend  
 npm install  
-npm run dev  
+npm start  
 to run the server in http://localhost:3000  
